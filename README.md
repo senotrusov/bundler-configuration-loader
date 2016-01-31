@@ -1,4 +1,4 @@
-# Bundler configuration loader, a tool to include the bundler configuration in the resulting build
+# Bundler configuration loader, a tool to include bundler configuration in the resulting build
 
 Provides a way to include [webpack module bundler](http://webpack.github.io/) configuration
 in the resulting bundle build.
