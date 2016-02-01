@@ -18,7 +18,7 @@ Basically the ``JSON.stringify()``` is performed.
 
 ## Usage
 
-Say you have variable in bundler configuration and you want that variable
+Say you have a variable in bundler configuration and you want that variable
 to be available in the resulting build:
 
 ```javascript
