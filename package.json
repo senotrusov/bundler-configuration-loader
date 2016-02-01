@@ -1,6 +1,6 @@
 {
   "name": "bundler-configuration-loader",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Bundler configuration loader, a tool to include bundler configuration in the resulting build",
   "main": "index.js",
   "repository": {

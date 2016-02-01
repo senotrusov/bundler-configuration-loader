@@ -1,7 +1,9 @@
 # Bundler configuration loader, a tool to include bundler configuration in the resulting build
 
 Provides a way to include [webpack module bundler](http://webpack.github.io/) configuration
-in the resulting bundle build.
+in the resulting bundle build. That makes possible to use certain data from build configuration
+later, at the time the build itself gets executed (in browser, in production environment,
+then installed as the package).
 
 By default the whole configuration will be included in the bundle build.
 That may lead to the leak of sensitive information and such use should be carefully considered.
@@ -16,7 +18,8 @@ Basically the ``JSON.stringify()``` is performed.
 
 ## Usage
 
-1. In bundler config.js:
+Say you have variable in bundler configuration and you want that variable
+to be available in the resulting build:
 
 ```javascript
 module.exports = {
@@ -24,13 +27,14 @@ module.exports = {
 };
 ```
 
-2. Somewhere in the javascript about to be packed:
+Somewhere in the javascript about to be packed you may call the loader and then
+the variable content (here "development") will be included in bundle:
 
 ```javascript
 // Include in the bundle build the part of the configuration accessible by the 'env' property
 var env = require('bundler-configuration?env!')
 
-// sample use of said value
+// sample use of that data
 if (env === 'development')
   window.logger.level = 'info'
 
