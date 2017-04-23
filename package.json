@@ -12,5 +12,5 @@
   "license": "Apache-2.0",
   "author": "Stanislav Senotrusov",
   "main": "index.js",
-  "repository": "senotrusov/bundler-configuration-loader",
+  "repository": "senotrusov/bundler-configuration-loader"
 }
