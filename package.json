@@ -1,21 +1,16 @@
 {
   "name": "bundler-configuration-loader",
-  "version": "1.0.6",
+  "version": "2.0.0",
   "description": "Bundler configuration loader, a tool to include bundler configuration in the resulting build",
-  "main": "index.js",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/senotrusov/bundler-configuration-loader.git"
-  },
   "keywords": [
     "bundler",
     "configuration",
     "build"
   ],
-  "author": "Stanislav Senotrusov (http://senotrusov.com)",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/senotrusov/bundler-configuration-loader/issues"
-  },
-  "homepage": "https://github.com/senotrusov/bundler-configuration-loader#readme"
+  "homepage": "https://github.com/senotrusov/bundler-configuration-loader",
+  "bugs": "https://github.com/senotrusov/bundler-configuration-loader/issues",
+  "license": "Apache-2.0",
+  "author": "Stanislav Senotrusov",
+  "main": "index.js",
+  "repository": "senotrusov/bundler-configuration-loader",
 }
